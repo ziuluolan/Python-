@@ -1,0 +1,6 @@
+#判断一个数是否为素数
+def is_prime(n):
+    for i in range(2,n):
+        if n%i == 0:
+            return False #n对2到n之间数进行遍历求余数，如果各余数均不为零，则n是素数
+    return True
